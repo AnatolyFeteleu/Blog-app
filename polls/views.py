@@ -3,7 +3,6 @@ from django.http import HttpResponse, Http404
 from .models import Question, Choice
 
 # Create your views here.
-#test2
 def index(request):
     latest_question_list = Question.objects.order_by('-pub_date')[:5]
     context = {'latest_question_list': latest_question_list}
