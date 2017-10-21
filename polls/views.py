@@ -11,6 +11,7 @@ class IndexView(generic.ListView):
     """
     context = {'latest_question_list': latest_question_list}
     Контекст - это словарь, содержащий название переменных шаблона и соответствующие им значения.
+    
     """
 
     def get_queryset(self):
