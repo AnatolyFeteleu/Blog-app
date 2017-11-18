@@ -1,22 +1,15 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Blog</title>
+{% extends 'blog/base.html' %}
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-</head>
-<body>
+{% block content %}
     {% for post in posts %}
-        <div>
-            <h2><a href="">{{ post.title }}</a></h2>
-            <p>Author: {{ post.author }}</p>
-            <p>published: {{ post.published_date }}</p>
-            <p>{{ post.text|linebreaks }}</p>
+        <div class="post">
+            <h1><a href="">{{ post.title }}</a></h1>
+            <hr>
+            <!--<p>Author: {{ post.author }}</p>-->
+            <p id="text-blog">{{ post.text|linebreaksbr }}</p>
+            <p id="pblshd" style="margin-bottom: -5px">By: {{ post.author }}</p>
+            <p id="pblshd">published: {{ post.published_date }}</p>
         </div>
+    <br>
     {% endfor %}
-</body>
-</html>
+{% endblock %}

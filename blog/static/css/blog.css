@@ -1,3 +1,55 @@
-a {
+.post a {
     color: darkslategray;
+}
+
+.post a:hover {
+    color: #4a8897;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    color: #f2f2f2;
+    width: 100%;
+}
+
+.post p {
+    color: #666666;
+    margin-left: 50px;
+}
+
+.post p:nth-child(3) {
+    color: #2d4c55;
+}
+
+.post h1 {
+    margin-left: 25px;
+    font-family: "Lobster";
+}
+
+.page-header {
+    padding: 20px 20px 20px 20px;
+    margin-top: 0;
+}
+
+.page-header a {
+    font-family: "Lobster";
+    color: white;
+    font-size: 48px;
+}
+
+.page-header {
+    background-color: #5297a8;
+}
+
+#pblshd {
+    font-family: "Lobster", cursive;
+    font-size: 16px;
+}
+
+#text-blog{
+    width: 75%;
 }
