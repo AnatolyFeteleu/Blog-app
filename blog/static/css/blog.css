@@ -30,6 +30,13 @@ body {
     font-family: "Lobster";
 }
 
+#title {
+    argin-left: 25px;
+    font-family: "Lobster";
+    color: darkslategray;
+}
+
+
 .page-header {
     padding: 20px 20px 20px 20px;
     margin-top: 0;
@@ -52,4 +59,9 @@ body {
 
 #text-blog{
     width: 75%;
+}
+
+.date {
+    color: #666666;
+    margin-left: 50px;
 }
