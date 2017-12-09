@@ -19,7 +19,7 @@
 
         </div>
         {% endif %}
-        <h1 style="text-align: left;"><a href="">Django Blog</a></h1>
+        <h1 style="text-align: left;"><a href="{% url 'post_list' %}">Django Blog</a></h1>
     </div>
     {% block content %}
     {% endblock %}
