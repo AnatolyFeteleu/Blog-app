@@ -3,9 +3,10 @@
 {% block content %}
 
     <h1 id="title" style="margin-left: 25px">New blog</h1>
-    <form method="POST" class="post_form">
+    <form method="POST" class="post_form forms">
         {% csrf_token %}
         {{ form.as_p }}
+        <br>
         <button type="submit" class="save btn btn-default button">Save</button>
     </form>
 
