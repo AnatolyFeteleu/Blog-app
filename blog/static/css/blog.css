@@ -69,3 +69,17 @@ body {
 .button {
     margin-left: 25px;
 }
+
+.login {
+    color: gray;
+      position: fixed; top: 35%; left: 45%;
+      -webkit-transform: translate(-35%, -45%);
+      -ms-transform: translate(-35%, -45%);
+      transform: translate(-35%, -45%);
+}
+
+.logout {
+    font-family: "Lobster", cursive;
+    font-size: 24px;
+
+}

@@ -16,8 +16,12 @@
         <div class="icons" style="display: block; margin-bottom: -90px;">
             <a href="{% url 'post_new' %}" class="top-menu" style="text-align: right; margin-left: 300px;"><span class="glyphicon glyphicon-plus"></span></a>
             <a href="{% url 'post_draft_list' %}" class="top-menu" style="text-align: right; margin-left: 20px"><span class="glyphicon glyphicon-edit"></span></a>
+            <p class="top-menu logout" style="position: fixed; text-align: right; right: 100px; top: 25px; text-transform: capitalize">Hello {{ user.username }} (<a href="{% url 'logout' %}" style="font-size: 24px; color: orange">Log out</a>)</p>
 
         </div>
+        {% else %}
+        <a href="{% url 'login' %}" class="top-menu" style="position: fixed; text-align: right; right: 100px; top: 25px"><span class="glyphicon glyphicon-lock"></span></a>
+
         {% endif %}
         <h1 style="text-align: left;"><a href="{% url 'post_list' %}">Django Blog</a></h1>
     </div>
