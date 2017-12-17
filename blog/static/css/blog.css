@@ -89,3 +89,12 @@ body {
     margin-left: 50px;
     margin-top: 25px;
 }
+
+.form_comments {
+    color: gray;
+    margin-left: 50px;
+}
+
+.form_comments>h1 {
+    font-family: "Lobster", cursive;
+}

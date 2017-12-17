@@ -9,6 +9,8 @@
             <p id="text-blog">{{ post.text|linebreaksbr }}</p>
             <p id="pblshd" style="margin-bottom: -5px">By: {{ post.author }}</p>
             <p id="pblshd">published: {{ post.published_date }}</p>
+            <a id="pblshd" style="margin-left: 50px" href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a>
+
         </div>
     <br>
     {% endfor %}
